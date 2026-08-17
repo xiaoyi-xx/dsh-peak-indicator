@@ -1,5 +1,7 @@
 # dsh-peak-indicator
 
+[English](README.md) | 中文
+
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web GUI 的高峰时段指示灯。在会话头部右上角（原生 `conversation.session.header.utilities` 工具位）显示一个融入界面的小胶囊，实时告诉你当前**北京时间**是否处于 DeepSeek API 的**高峰时段**，带秒级时钟、下一转折倒计时和价格提示。
 
 ![peak indicator](assets/peak-indicator.png)
