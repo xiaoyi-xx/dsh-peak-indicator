@@ -4,9 +4,9 @@ English | [中文](README.zh-CN.md)
 
 A peak-hour indicator for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) web GUI. A small native chip in the session header shows whether the current **Beijing time** falls inside DeepSeek's API **peak window**, with a live clock, a countdown to the next transition, and a pricing hint.
 
-![peak indicator](assets/peak-indicator.png)
+![peak indicator preview](assets/peak-indicator.png)
 
-> Screenshot placeholder — drop a real capture at `assets/peak-indicator.png` and push it.
+> Preview (rendered mockup). Drop a real capture of the chip at `assets/peak-indicator.png` and push it to replace this one.
 
 ## What it shows
 

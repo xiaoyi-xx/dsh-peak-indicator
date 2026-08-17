@@ -4,9 +4,9 @@
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web GUI 的高峰时段指示灯。在会话头部右上角（原生 `conversation.session.header.utilities` 工具位）显示一个融入界面的小胶囊，实时告诉你当前**北京时间**是否处于 DeepSeek API 的**高峰时段**，带秒级时钟、下一转折倒计时和价格提示。
 
-![peak indicator](assets/peak-indicator.png)
+![peak indicator 预览](assets/peak-indicator.png)
 
-> 截图占位——把实际截图放到 `assets/peak-indicator.png` 再推送。
+> 预览图（示意渲染）。有真实截图时，用截图替换 `assets/peak-indicator.png` 再推送即可。
 
 ## 功能
 
