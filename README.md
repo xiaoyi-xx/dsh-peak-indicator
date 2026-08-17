@@ -6,8 +6,6 @@ A peak-hour indicator for the [DeepSeek Harness](https://github.com/deepseek-ai/
 
 ![peak indicator preview](assets/peak-indicator.png)
 
-> Preview (rendered mockup). Drop a real capture of the chip at `assets/peak-indicator.png` and push it to replace this one.
-
 ## What it shows
 
 DeepSeek's official peak/valley API pricing took effect on **2026-08-17**:

@@ -6,8 +6,6 @@
 
 ![peak indicator 预览](assets/peak-indicator.png)
 
-> 预览图（示意渲染）。有真实截图时，用截图替换 `assets/peak-indicator.png` 再推送即可。
-
 ## 功能
 
 DeepSeek 官方峰谷定价于 **2026-08-17** 生效：
