@@ -1,0 +1,55 @@
+{
+  "name": "dsh-peak-indicator",
+  "version": "1.0.0",
+  "description": "Peak-hour indicator for the DSH web GUI: a native header chip showing whether the current Beijing time is inside DeepSeek's API peak window (daily 09:00–12:00 / 14:00–18:00), with a live clock, countdown, and ×2/off-peak pricing hints. · DSH Web GUI 高峰指示灯：原生会话头部胶囊，实时显示当前北京时间是否处于 DeepSeek API 高峰时段。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "npm run build",
+    "check": "node --check src/index.js && node --check src/client.js",
+    "test": "node scripts/test-peak.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "harness",
+    "dsh-plugin",
+    "peak",
+    "pricing",
+    "status",
+    "web-ui"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoyi-xx/dsh-peak-indicator.git"
+  },
+  "homepage": "https://github.com/xiaoyi-xx/dsh-peak-indicator",
+  "bugs": {
+    "url": "https://github.com/xiaoyi-xx/dsh-peak-indicator/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
