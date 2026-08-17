@@ -1,5 +1,5 @@
 /**
- * dsh-peak-indicator — browser half.
+ * dsh-peak-status — browser half.
  *
  * A compact status chip in the session header's right-aligned utilities
  * strip (conversation.session.header.utilities) — the very top of the
@@ -18,8 +18,8 @@
  */
 (function () {
   // The host client-modules expects a bundle to register the id of the entry
-  // it is mounted as — the package name ("@local/dsh-peak-indicator" for a
-  // profile @local install, "dsh-peak-indicator" when installed from npm).
+  // it is mounted as — the package name ("@local/dsh-peak-status" for a
+  // profile @local install, "dsh-peak-status" when installed from npm).
   // Derive it from the bundle URL at runtime so one artifact works in every
   // mount shape (bundles are loaded via <script>, so document.currentScript
   // is the plugin script while this top-level code runs).
@@ -202,12 +202,12 @@
         if (slots === undefined) return
         slots.inject('conversation.session.header.utilities', function () {
           return slots.register(
-            { name: 'conversation.session.header.utilities', id: 'dsh-peak-indicator', order: 1 },
+            { name: 'conversation.session.header.utilities', id: 'dsh-peak-status', order: 1 },
             PeakChip,
           )
         })
       } catch (error) {
-        console.warn('[dsh-peak-indicator] apply failed:', error)
+        console.warn('[dsh-peak-status] apply failed:', error)
       }
     }
 
@@ -227,7 +227,7 @@
   } else {
     // Script URL unavailable — cover both install shapes so neither mount
     // fails the "loaded without registering" check.
-    registerModule('@local/dsh-peak-indicator')
-    registerModule('dsh-peak-indicator')
+    registerModule('@local/dsh-peak-status')
+    registerModule('dsh-peak-status')
   }
 })()

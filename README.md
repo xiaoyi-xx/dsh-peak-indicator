@@ -1,4 +1,4 @@
-# dsh-peak-indicator
+# dsh-peak-status
 
 English | [中文](README.zh-CN.md)
 
@@ -31,24 +31,24 @@ The plugin is a real package mounted through the profile's patch layer, so it **
 ### Via the dsh CLI (after publishing to npm)
 
 ```sh
-dsh plugin --profile web add dsh-peak-indicator
+dsh plugin --profile web add dsh-peak-status
 ```
 
 ### Manual / from source
 
-1. Copy (or link) the `dsh-peak-indicator` folder into the profile's `node_modules`:
+1. Copy (or link) the `dsh-peak-status` folder into the profile's `node_modules`:
 
    ```sh
    # from the repo root
-   cp -R . "$HOME/.dsh/profiles/web/node_modules/dsh-peak-indicator"
+   cp -R . "$HOME/.dsh/profiles/web/node_modules/dsh-peak-status"
    ```
 
 2. Add one insert to `~/.dsh/profiles/web/cordis.patch.yml`:
 
    ```yaml
    - insert:
-       - id: dsh-peak-indicator
-         name: 'dsh-peak-indicator'
+       - id: dsh-peak-status
+         name: 'dsh-peak-status'
    ```
 
 3. Refresh the page (the patch file is watched and hot-reloads); restart `dsh web` if the chip does not appear.
@@ -72,7 +72,7 @@ The peak windows are hard-coded in `src/client.js` (`BOUNDS = [540, 720, 840, 10
 ## Repository layout
 
 ```
-dsh-peak-indicator/
+dsh-peak-status/
 ├── src/             # source of truth (host half + browser half)
 ├── lib/             # built output, committed for zero-friction installs
 ├── scripts/         # build + tests
@@ -86,7 +86,7 @@ dsh-peak-indicator/
 npm publish          # prepack builds lib/ automatically
 ```
 
-Then `dsh plugin --profile web add dsh-peak-indicator` installs the published version.
+Then `dsh plugin --profile web add dsh-peak-status` installs the published version.
 
 ## License
 

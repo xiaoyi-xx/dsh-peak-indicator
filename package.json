@@ -1,5 +1,5 @@
 {
-  "name": "dsh-peak-indicator",
+  "name": "dsh-peak-status",
   "version": "1.0.0",
   "description": "Peak-hour indicator for the DSH web GUI: a native header chip showing whether the current Beijing time is inside DeepSeek's API peak window (daily 09:00–12:00 / 14:00–18:00), with a live clock, countdown, and ×2/off-peak pricing hints. · DSH Web GUI 高峰指示灯：原生会话头部胶囊，实时显示当前北京时间是否处于 DeepSeek API 高峰时段。",
   "type": "module",
@@ -37,11 +37,11 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xiaoyi-xx/dsh-peak-indicator.git"
+    "url": "https://github.com/xiaoyi-xx/dsh-peak-status.git"
   },
-  "homepage": "https://github.com/xiaoyi-xx/dsh-peak-indicator",
+  "homepage": "https://github.com/xiaoyi-xx/dsh-peak-status",
   "bugs": {
-    "url": "https://github.com/xiaoyi-xx/dsh-peak-indicator/issues"
+    "url": "https://github.com/xiaoyi-xx/dsh-peak-status/issues"
   },
   "dsh": {
     "bundle": {

@@ -1,4 +1,4 @@
-# dsh-peak-indicator
+# dsh-peak-status
 
 [English](README.md) | 中文
 
@@ -31,24 +31,24 @@ DeepSeek 官方峰谷定价于 **2026-08-17** 生效：
 ### dsh CLI 安装（发布到 npm 后）
 
 ```sh
-dsh plugin --profile web add dsh-peak-indicator
+dsh plugin --profile web add dsh-peak-status
 ```
 
 ### 手动 / 源码安装
 
-1. 把 `dsh-peak-indicator` 目录复制（或链接）进 profile 的 `node_modules`：
+1. 把 `dsh-peak-status` 目录复制（或链接）进 profile 的 `node_modules`：
 
    ```sh
    # 在仓库根目录执行
-   cp -R . "$HOME/.dsh/profiles/web/node_modules/dsh-peak-indicator"
+   cp -R . "$HOME/.dsh/profiles/web/node_modules/dsh-peak-status"
    ```
 
 2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 里加一行插入：
 
    ```yaml
    - insert:
-       - id: dsh-peak-indicator
-         name: 'dsh-peak-indicator'
+       - id: dsh-peak-status
+         name: 'dsh-peak-status'
    ```
 
 3. 刷新页面（补丁文件有监听、支持热加载）；没出现就重启一次 `dsh web`。
@@ -72,7 +72,7 @@ npm test          # 高峰判定算法边界测试
 ## 目录结构
 
 ```
-dsh-peak-indicator/
+dsh-peak-status/
 ├── src/             # 源码（宿主半区 + 浏览器半区）
 ├── lib/             # 构建产物（已提交，零门槛安装）
 ├── scripts/         # 构建与测试脚本
@@ -86,7 +86,7 @@ dsh-peak-indicator/
 npm publish          # prepack 会自动构建 lib/
 ```
 
-之后 `dsh plugin --profile web add dsh-peak-indicator` 即可安装已发布版本。
+之后 `dsh plugin --profile web add dsh-peak-status` 即可安装已发布版本。
 
 ## 许可证
 
